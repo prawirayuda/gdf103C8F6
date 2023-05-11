@@ -1,0 +1,767 @@
+{
+  "name": "Project",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Application",
+        "files": [
+          {
+            "path": "../gd32f10x_it.c"
+          },
+          {
+            "path": "../main.c"
+          },
+          {
+            "path": "../systick.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "../../Firmware/CMSIS/GD/GD32F10x/Source/system_gd32f10x.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Doc",
+        "files": [],
+        "folders": []
+      },
+      {
+        "name": "Peripherals",
+        "files": [
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_adc.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_bkp.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_can.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_crc.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_dac.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_dbg.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_dma.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_enet.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_exmc.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_exti.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_fmc.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_fwdgt.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_gpio.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_i2c.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_misc.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_pmu.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_rcu.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_rtc.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_sdio.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_spi.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_timer.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_usart.c"
+          },
+          {
+            "path": "../../Firmware/GD32F10x_standard_peripheral/Source/gd32f10x_wwdgt.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Startup",
+        "files": [
+          {
+            "path": "../../Firmware/CMSIS/GD/GD32F10x/Source/ARM/startup_gd32f10x_cl.s"
+          },
+          {
+            "path": "../../Firmware/CMSIS/GD/GD32F10x/Source/ARM/startup_gd32f10x_hd.s"
+          },
+          {
+            "path": "../../Firmware/CMSIS/GD/GD32F10x/Source/ARM/startup_gd32f10x_md.s"
+          },
+          {
+            "path": "../../Firmware/CMSIS/GD/GD32F10x/Source/ARM/startup_gd32f10x_xd.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Utilities",
+        "files": [
+          {
+            "path": "../../Utilities/gd32f10x_eval.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "GD32F103C8",
+  "packDir": ".pack/GigaDevice/GD32F10x_DFP.2.0.2",
+  "miscInfo": {
+    "uid": "18009e62b673e2d6971a2ed065b6dfef"
+  },
+  "targets": {
+    "GD32F10X_CL": {
+      "excludeList": [
+        "<virtual_root>/Startup/startup_gd32f10x_hd.s",
+        "<virtual_root>/Startup/startup_gd32f10x_md.s",
+        "<virtual_root>/Startup/startup_gd32f10x_xd.s"
+      ],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "output/Project.sct",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x18000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x40000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "GigaDevice",
+          "cpuName": "GD32F103C8"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../Firmware/CMSIS/GD/GD32F10x/Include",
+          "../../Firmware/CMSIS",
+          "../../Utilities",
+          "..",
+          "../../Utilities/LCD_common",
+          "../../Firmware/GD32F10x_standard_peripheral/Include",
+          ".cmsis/include",
+          "RTE/_GD32F10X_CL",
+          ".eide/deps"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "GD32F10X_CL"
+        ]
+      }
+    },
+    "GD32F10X_MD": {
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "output/Project.sct",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "toolchain": "AC5",
+      "custom_dep": {
+        "name": "default",
+        "sourceDirList": [],
+        "libList": [],
+        "incList": [
+          "../../Firmware/CMSIS/GD/GD32F10x/Include",
+          "../../Firmware/CMSIS",
+          "../../Utilities",
+          "..",
+          "../../Utilities/LCD_common",
+          "../../Firmware/GD32F10x_standard_peripheral/Include",
+          ".cmsis/include",
+          "RTE/_GD32F10X_MD"
+        ],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "GD32F10X_MD"
+        ]
+      },
+      "excludeList": [
+        "<virtual_root>/Startup/startup_gd32f10x_cl.s",
+        "<virtual_root>/Startup/startup_gd32f10x_hd.s",
+        "<virtual_root>/Startup/startup_gd32f10x_xd.s"
+      ]
+    },
+    "GD32F10X_HD": {
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "output/Project.sct",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0xc000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x40000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "toolchain": "AC5",
+      "custom_dep": {
+        "name": "default",
+        "sourceDirList": [],
+        "libList": [],
+        "incList": [
+          "../../Firmware/CMSIS/GD/GD32F10x/Include",
+          "../../Firmware/CMSIS",
+          "../../Utilities",
+          "..",
+          "../../Utilities/LCD_common",
+          "../../Firmware/GD32F10x_standard_peripheral/Include",
+          ".cmsis/include",
+          "RTE/_GD32F10X_HD"
+        ],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "GD32F10X_HD"
+        ]
+      },
+      "excludeList": [
+        "<virtual_root>/Startup/startup_gd32f10x_cl.s",
+        "<virtual_root>/Startup/startup_gd32f10x_md.s",
+        "<virtual_root>/Startup/startup_gd32f10x_xd.s"
+      ]
+    },
+    "GD32F10X_XD": {
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "output/Project.sct",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x18000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x300000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "toolchain": "AC5",
+      "custom_dep": {
+        "name": "default",
+        "sourceDirList": [],
+        "libList": [],
+        "incList": [
+          "../../Firmware/CMSIS/GD/GD32F10x/Include",
+          "../../Firmware/CMSIS",
+          "../../Utilities",
+          "..",
+          "../../Utilities/LCD_common",
+          "../../Firmware/GD32F10x_standard_peripheral/Include",
+          ".cmsis/include",
+          "RTE/_GD32F10X_XD"
+        ],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "GD32F10X_XD"
+        ]
+      },
+      "excludeList": [
+        "<virtual_root>/Startup/startup_gd32f10x_cl.s",
+        "<virtual_root>/Startup/startup_gd32f10x_hd.s",
+        "<virtual_root>/Startup/startup_gd32f10x_md.s"
+      ]
+    }
+  },
+  "version": "3.3"
+}
